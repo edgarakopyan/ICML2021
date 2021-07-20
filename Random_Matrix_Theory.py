@@ -27,3 +27,16 @@ GOE = (A+A.T)/np.sqrt(2*n)
 
 eig = np.linalg.eigvals(GOE)
 plt.hist(eig)
+
+
+# paper to check out: https://arxiv.org/pdf/1202.0068.pdf
+
+# WISHART MATRIX
+
+#r = 1/2 example 
+n = 10000
+X = np.random.randn(n*r, n)
+W = np.dot(X, X.T)/n
+
+eig = np.linalg.eigvals(W)
+plt.hist(eig)
