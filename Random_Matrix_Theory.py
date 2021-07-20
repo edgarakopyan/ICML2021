@@ -7,7 +7,7 @@ A = np.random.randn(n,n)
 GOE = (A+A.T)/np.sqrt(2*n)
 
 eig = np.linalg.eigvals(GOE)
-plt.hist(GOE)
+plt.hist(eig)
 
 # But as we increase dimenstion we get a clearer picture of 
 # semicircle
@@ -17,7 +17,7 @@ A = np.random.randn(n,n)
 GOE = (A+A.T)/np.sqrt(2*n)
 
 eig = np.linalg.eigvals(GOE)
-plt.hist(GOE)
+plt.hist(eig)
 
 # And finally 
 
@@ -26,4 +26,4 @@ A = np.random.randn(n,n)
 GOE = (A+A.T)/np.sqrt(2*n)
 
 eig = np.linalg.eigvals(GOE)
-plt.hist(GOE)
+plt.hist(eig)
