@@ -18,3 +18,12 @@ GOE = (A+A.T)/np.sqrt(2*n)
 
 eig = np.linalg.eigvals(GOE)
 plt.hist(GOE)
+
+# And finally 
+
+n = 5000
+A = np.random.randn(n,n)
+GOE = (A+A.T)/np.sqrt(2*n)
+
+eig = np.linalg.eigvals(GOE)
+plt.hist(GOE)
